@@ -5,10 +5,10 @@ import { createGenerateClassName, StylesProvider } from '@material-ui/styles'
 import AppRouter from './AppRouter.jsx';
 import './App.css';
 
-const generateClassName = createGenerateClassName({ productionPrefix: 'c'})
+const Name = createGenerateClassName({ productionPrefix: 'c'})
 const App = () => {
   return (
-  <StylesProvider generateClassName={generateClassName}>
+  <StylesProvider generateClassName={Name}>
     <CssBaseline />
     <AppRouter />
   </StylesProvider>
