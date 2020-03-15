@@ -1,10 +1,18 @@
 import React from 'react';
+import CssBaseline from '@material-ui/core/CssBaseline'
+import { createGenerateClassName, StylesProvider } from '@material-ui/styles'
 // import logo from './logo.svg';
 import AppRouter from './AppRouter.jsx';
 import './App.css';
 
+const generateClassName = createGenerateClassName({ productionPrefix: 'c'})
 const App = () => {
-  return <AppRouter />
+  return (
+  <StylesProvider generateClassName={generateClassName}>
+    <CssBaseline />
+    <AppRouter />
+  </StylesProvider>
+  )
 }
 // function App() {
 //   return (
