@@ -11,10 +11,10 @@ const Styles = makeStyles({
   }
 })
 
-const AppContent = ({ children }) => {
+const Content = ({ children }) => {
   const classes = Styles()
 
   return <main className={classes.root}>{children}</main>
 }
 
-export default AppContent
+export default Content
